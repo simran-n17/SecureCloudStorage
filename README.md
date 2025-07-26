@@ -117,7 +117,7 @@ secure-cloud-storage/
 │   └── s3-bucket-contents.png
 └── requirements.txt
 
-
+```
 
 ## 💡 Future Improvements
 
@@ -128,5 +128,4 @@ secure-cloud-storage/
 
 
 <p align="center"><em>“Your data, your control.”</em></p>
-```
 
