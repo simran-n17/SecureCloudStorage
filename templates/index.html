@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SecureCloud Storage</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 SecureCloud Storage</h1>
+    <p>Your encrypted files, secured in the cloud</p>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash-message">{{ messages[0] }}</div>
+      {% endif %}
+    {% endwith %}
+
+    <div class="panels">
+      <!-- Upload Form -->
+      <div class="panel">
+        <h2>Upload & Encrypt</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data" onsubmit="showLoader()">
+          <input type="file" name="file" accept=".pdf,.docx,.txt" required>
+          <button type="submit">Encrypt & Upload</button>
+          <div id="loader" class="loader" style="display: none;">Encrypting & Uploading...</div>
+        </form>
+      </div>
+
+      <!-- Download Form -->
+      <div class="panel">
+        <h2>Download & Decrypt</h2>
+        <form method="POST" action="/downloads">
+            <label for="filename">Select Encrypted File:</label>
+            <select name="filename" id="filename" required>
+                {% for file in encrypted_files %}
+                    <option value="{{ file }}">{{ file }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Download & Decrypt</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 SecureCloud Solutions</footer>
+
+  <script>
+    function showLoader() {
+      document.getElementById("loader").style.display = "block";
+    }
+  </script>
+</body>
+</html>
