@@ -16,7 +16,7 @@
 ## 📽️ Demo
 
 <p align="center">
-  <a href="./demo/SecureCloudDemo.mp4">
+  <a href="demo/SecureCloudDemo.mp4">
     <img src="https://img.icons8.com/clouds/500/play-button-circled.png" alt="Watch Demo" width="200"/>
   </a>
 </p>
