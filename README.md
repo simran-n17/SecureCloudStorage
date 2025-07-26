@@ -104,7 +104,7 @@ This project integrates directly with **AWS S3 Buckets** for file storage. Below
 ---
 
 ## 📎 Folder Structure
-
+```bash
 secure-cloud-storage/
 │
 ├── app.py
@@ -116,8 +116,8 @@ secure-cloud-storage/
 │   ├── s3-bucket-list.png
 │   └── s3-bucket-contents.png
 └── requirements.txt
-
 ```
+
 
 ## 💡 Future Improvements
 
