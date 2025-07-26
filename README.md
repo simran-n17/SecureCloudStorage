@@ -62,13 +62,13 @@ This project integrates directly with **AWS S3 Buckets** for file storage. Below
 ### 📁 S3 Bucket: `securecloud-user-files`
 
 <p align="center">
-  <img src="./screenshots/s3-bucket-list.png" alt="S3 Buckets" width="700"/>
+  <img src="demo/Bucket.png" alt="S3 Buckets" width="700"/>
 </p>
 
 ### 📂 Encrypted Objects in Bucket
 
 <p align="center">
-  <img src="./screenshots/s3-bucket-contents.png" alt="S3 Bucket Objects" width="700"/>
+  <img src="demo/bucket-Object.png" alt="S3 Bucket Objects" width="700"/>
 </p>
 
 > 🔒 Each file is encrypted client-side before being uploaded to the bucket.
@@ -105,8 +105,6 @@ This project integrates directly with **AWS S3 Buckets** for file storage. Below
 
 ## 📎 Folder Structure
 
-````
-
 secure-cloud-storage/
 │
 ├── app.py
@@ -119,7 +117,7 @@ secure-cloud-storage/
 │   └── s3-bucket-contents.png
 └── requirements.txt
 
-```
+
 
 ## 💡 Future Improvements
 
@@ -128,7 +126,6 @@ secure-cloud-storage/
 * 🔍 Search functionality
 * 🔑 Two-Factor Authentication
 
----
 
 <p align="center"><em>“Your data, your control.”</em></p>
 ```
