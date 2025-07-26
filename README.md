@@ -1,6 +1,6 @@
 <h1 align="center">🔐 Secure Cloud Storage</h1>
 <p align="center">
-  A Flask-based web application for secure, encrypted file storage and retrieval.<br>
+  A secure web application that allows users to upload, encrypt, and manage their files using a cloud storage backend (AWS S3). Built with Flask, SQLAlchemy, and integrated AWS services.<br>
   <em>Protect your files with encryption. Store and retrieve them with confidence.</em>
 </p>
 
@@ -10,6 +10,13 @@
   <img src="https://img.shields.io/badge/Status-Active-brightgreen.svg" />
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
 </p>
+
+---
+Absolutely! Here's a polished `README.md` section that includes:
+
+* A **Demo Video** (clickable image style as discussed)
+* **Screenshots of AWS Buckets and their Objects**
+* All content aligned and cleanly formatted
 
 ---
 
@@ -25,17 +32,14 @@
 
 ---
 
-## 🧩 Overview
+## 🛠️ Features
 
-**Secure Cloud Storage** is a secure file management platform that lets users:
-
-- 🔒 Upload and encrypt files
-- ⬇️ Download encrypted files securely
-- 🧹 Delete unwanted files
-- 🔐 Register and login securely
-- 📦 View and manage stored files via a simple dashboard
-
-All operations happen locally unless hosted externally.
+- 🔐 File encryption before upload
+- ☁️ Secure storage on AWS S3
+- 📥 Download & decrypt functionality
+- 🧑‍💻 User authentication and dashboard
+- 📊 Real-time progress and feedback
+- 🌐 Deployed via cloud or local server
 
 ---
 
@@ -51,63 +55,71 @@ All operations happen locally unless hosted externally.
 
 ---
 
-## 🛠️ Setup Instructions
+## 🧳 AWS Integration
 
-### 1️⃣ Clone the Repository
+This project integrates directly with **AWS S3 Buckets** for file storage. Below are screenshots of the S3 buckets and the stored objects:
 
-```bash
-git clone https://github.com/your-username/secure-cloud-storage.git
-cd secure-cloud-storage
+### 📁 S3 Bucket: `securecloud-user-files`
+
+<p align="center">
+  <img src="./screenshots/s3-bucket-list.png" alt="S3 Buckets" width="700"/>
+</p>
+
+### 📂 Encrypted Objects in Bucket
+
+<p align="center">
+  <img src="./screenshots/s3-bucket-contents.png" alt="S3 Bucket Objects" width="700"/>
+</p>
+
+> 🔒 Each file is encrypted client-side before being uploaded to the bucket.
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repo:
+    ```bash
+    git clone https://github.com/yourusername/secure-cloud-storage.git
+    cd secure-cloud-storage
+    ```
+
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Add your AWS credentials and Flask secret key in a `.env` file:
+    ```
+    AWS_ACCESS_KEY_ID=your_key
+    AWS_SECRET_ACCESS_KEY=your_secret
+    AWS_BUCKET_NAME=your_bucket_name
+    SECRET_KEY=your_flask_secret
+    ```
+
+4. Run the application:
+    ```bash
+    python app.py
+    ```
+
+---
+
+## 📎 Folder Structure
+
 ````
 
-### 2️⃣ Create Virtual Environment
-
-```bash
-python -m venv venv
-source venv/bin/activate      # For Linux/macOS
-venv\Scripts\activate         # For Windows
-```
-
-### 3️⃣ Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4️⃣ Run the App
-
-```bash
-python app.py
-```
-
-Visit [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
-
----
-
-## 📁 Project Structure
-
-```
 secure-cloud-storage/
 │
-├── app.py                 # Main Flask application
-├── templates/             # HTML templates (Jinja2)
-├── static/                # CSS and JavaScript
-├── uploads/               # Encrypted user file storage
-├── demo/                  # Screen recording demo (mp4)
-├── requirements.txt       # Required Python packages
-└── README.md              # This file
+├── app.py
+├── templates/
+├── static/
+├── demo/
+│   └── SecureCloudDemo.mp4
+├── screenshots/
+│   ├── s3-bucket-list.png
+│   └── s3-bucket-contents.png
+└── requirements.txt
+
 ```
-
----
-
-## 🔐 Security Features
-
-* **User Authentication**: Secure login & session management
-* **File Encryption**: Uses Fernet symmetric encryption
-* **Access Control**: User-specific file handling
-* **Safe Storage**: Files saved in encrypted format only
-
----
 
 ## 💡 Future Improvements
 
@@ -121,4 +133,3 @@ secure-cloud-storage/
 <p align="center"><em>“Your data, your control.”</em></p>
 ```
 
----
