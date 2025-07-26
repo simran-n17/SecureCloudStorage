@@ -15,9 +15,14 @@
 
 ## 📽️ Demo
 
-![Demo GIF](./demo/demo-preview.gif)
+<p align="center">
+  <a href="./demo/SecureCloudDemo.mp4">
+    <img src="https://imgs.search.brave.com/d6gWtszbktHmpU-rlAXmVNmGIsC5v4fJiFy-I1SYn9s/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L3lvdXR1YmUtcGxh/eS1idXR0b24tcG5n/L3lvdXR1YmUtcGxh/eS1idXR0b24teW91/dHViZS1zdWJzY3Jp/YmUtYnV0dG9uLWFu/ZC1iZWxsLWljb24t/ZnVsbC1zZXQtcG5n/LWdyZWVuLXNjcmVl/bi1tdGMtdHV0b3Jp/YWxzLTE5LnBuZw" alt="Watch Demo" width="200"/>
+  </a>
+</p>
 
 > 🔹 Click the play button above to watch the screen recording demo.
+
 ---
 
 ## 🧩 Overview
