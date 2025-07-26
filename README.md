@@ -15,10 +15,13 @@
 
 ## 📽️ Demo
 
-🔹 **Watch the screen recording demo** to see the app in action:
+<p align="center">
+  <a href="./demo/SecureCloudDemo.mp4">
+    <img src="https://img.icons8.com/clouds/500/play-button-circled.png" alt="Watch Demo" width="200"/>
+  </a>
+</p>
 
-> 🎥 [Click here to view demo](./demo/SecureCloudDemo.mp4)
-
+> 🔹 Click the play button above to watch the screen recording demo.
 ---
 
 ## 🧩 Overview
