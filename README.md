@@ -15,11 +15,7 @@
 
 ## 📽️ Demo
 
-<p align="center">
-  <a href="demo/SecureCloudDemo.mp4">
-    <img src="demo/secureCloudDemo.mp4" alt="Watch Demo" width="200"/>
-  </a>
-</p>
+![Demo GIF](./demo/demo-preview.gif)
 
 > 🔹 Click the play button above to watch the screen recording demo.
 ---
